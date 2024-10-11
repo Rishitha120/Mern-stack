@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  margin: 0;
+}
+.logo {
+  float: left;
+  margin-right: 6rem;
+  margin-top: 0;
+}
+.list a {
+  float: left;
+  margin-left: 2rem;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #3f51b5;
+  text-decoration: none;
+}
+.list a:hover {
+  background-color: royalblue;
+  color: white;
+  border-radius: 6px;
+}
+hr {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+.content h3 {
+  font-size: 2.2vw;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  color: #364146;
+}
+.content p {
+  font-family: open Sans, sans-serif;
+}
+.content a {
+  text-decoration: none;
+  color: blue;
+}
+.content a:hover {
+  text-decoration: underline;
+} */
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+.content h3 {
+  margin-left: 3rem;
+  font-size: 2.4vw;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  color: #133443;
+  line-height: 3rem;
+  margin-bottom: 15px;
+}
+
+.content p {
+  margin-left: 3rem;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #055898;
+  font-weight: 600;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-left: 3rem;
+  font-size: 20px;
+  padding: 18px;
+  background-color: #055898;
+  color: white;
+  border: none;
+  width: 170px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+.btn:hover {
+  background-color: #1c5f7e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
+}
+.img-course {
+  /* margin-top: 3rem; */
+  margin-left: 3rem;
+  width: 1000px;
+}
+.container2 p {
+  text-align: center;
+  font-size: 28px;
+  /* font-weight: 700; */
+  font-family: Open Sans, sans-serif;
+  margin-top: 20px;
+}
+.cards-1 {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 20px;
+  font-family: open sans, sans-serif;
+}
+.card p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card span {
+  font-size: 13px;
+  color: gray;
+}
+.card {
+  border: 0.5px solid black;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  width: 750px;
+  max-height: 850px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 7px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.cards-2 {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-family: open sans, sans-serif;
+}
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #055898;
+  color: white;
+  padding: 10px;
+  line-height: 2rem;
+  font-family: open sans, sans-serif;
+}
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h3,
+  .content p,
+  .btn {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .img-course {
+    margin: 0;
+    width: 90%;
+  }
+
+  .cards-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Tablets (768px or less) */
+@media (max-width: 768px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list a {
+    float: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 18px;
+    width: 150px;
+    padding: 12px;
+  }
+
+  .img-course {
+    width: 80%;
+  }
+
+  .cards-2 {
+    width: 300px;
+  }
+}
+
+/* Mobile Phones (480px or less) */
+@media (max-width: 480px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .list a {
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+
+  .content {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .content h3 {
+    font-size: 6vw;
+    line-height: 2rem;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+    width: 140px;
+  }
+
+  .img-course {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cards-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
